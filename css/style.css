@@ -19,3 +19,91 @@ img {
     GENERAL
 */
 
+#body {
+    background-color: #DBDBD3;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+}
+
+.my-background {
+    width: 100%;
+    height: 20vh;
+    background: rgb(0,150,136);
+    position: absolute;
+    z-index: -1;
+}
+
+.my-container {
+    width: 75%;
+    height: 90vh;
+    margin: 0px auto;
+    border: 1px solid red;
+    padding-top: 100px;
+    display: flex;
+}
+
+.my-container * {
+    border: 1px dashed black;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+}
+
+#user-image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#user-name {
+    flex-grow: 1;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.left i{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #B1B1B1;
+}
+
+.notifications {
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+
+}
+
+#bell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bell i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 80px;
+    color: #8EDAFC;
+    background-color: #F2FBFF;
+}
+
+#notifications-text{
+    flex-grow: 1;
+}
+
