@@ -28,43 +28,84 @@
         <div class="my-background">
             
         </div>
-        <div class="my-container">
-            <div class="left">
-                <div id="user">
-                    <div id="user-image">
-                        <img src="./img/avatar_io.jpg" alt="avatar_io">
+
+        <div id="app">
+            <div class="my-container">
+                <div class="left">
+                    <div id="user">
+                        <div class="user-image">
+                            <img src="./img/avatar_io.jpg" alt="avatar_io">
+                        </div>
+                        <div class="user-name">Sofia</div>
+                        <div id="user-story">
+                            <a href="#">
+                                <i class="fa-solid fa-circle-notch"></i>
+                            </a>
+                        </div>
+                        <div id="user-new-message">
+                            <a href="#">
+                                <i class="fa-solid fa-message"></i>
+                            </a>
+                        </div>
+                        <div id="user-menu">
+                            <a href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div id="user-name">Sofia</div>
-                    <div id="user-story">
-                        <a href="#">
-                            <i class="fa-solid fa-circle-notch"></i>
-                        </a>
+                    <div class="notifications">
+                        <div id="bell">
+                            <a href="#">
+                                <i class="fa-solid fa-bell-slash"></i>
+                            </a>
+                        </div>
+                        <div id="notifications-text">
+                            <p>Ricevi notifiche di nuovi messaggi</p>
+                            <a href="#">Attiva notifiche testo desktop</a>
+                        </div>
                     </div>
-                    <div id="user-new-message">
-                        <a href="#">
-                            <i class="fa-solid fa-message"></i>
-                        </a>
+                    <div class="search-bar ">
+                        <div id="magnifying-glass">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div id="search-text">
+                            <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        </div>
                     </div>
-                    <div id="user-menu">
-                        <a href="#">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </a>
+                    <div class="contact-list">
+                        <ul>
+                            <li
+                            v-for = "(contact, i) in contacts"
+                            >
+                            <img :src="contacts.avatar" :alt="">
+
+                            {{ contact.name }}
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="notifications">
-                    <div id="bell">
-                        <a href="#">
-                            <i class="fa-solid fa-bell-slash"></i>
-                        </a>
-                    </div>
-                    <div id="notifications-text">
-                        <p>Ricevi notifiche di nuovi messaggi</p>
-                        <a href="#">Attiva notifiche testo desktop</a>
+                <div class="right">
+                    <div class="chat-selected">
+                        <div class="chat-user">
+                            <div class="user-image">
+                                <img src="./img/avatar_1.jpg" alt="avatar_1">
+                            </div>
+                            <div class="chat-selected-text">
+                                <div class="user-name">Michele</div>
+                                <div id="last-access"></div>
+                            </div>
+                        </div>
+    
+                        <div class="chat-menu">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right"></div>
         </div>
+
 
         
 

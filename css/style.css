@@ -44,7 +44,7 @@ img {
 }
 
 .my-container * {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .left {
@@ -59,15 +59,16 @@ img {
     display: flex;
     align-items: center;
     background-color: #EAEAEA;
+
 }
 
-#user-image img{
+.user-image img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-#user-name {
+.user-name {
     flex-grow: 1;
     padding: 10px;
     font-weight: 400;
@@ -91,14 +92,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70px;
+    height: 70px;
 }
 
 #bell i{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 auto;
-    line-height: 80px;
+    line-height: 30px;
+    border-radius: 70px;
     color: #8EDAFC;
     background-color: #F2FBFF;
 }
@@ -107,3 +107,36 @@ img {
     flex-grow: 1;
 }
 
+#notifications-text p{
+    margin-bottom: 0px;
+}
+
+#notifications-text a{
+    color: #B1B1B1;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.search-bar #search-text {
+    flex-grow: 1;
+}
+
+.search-bar #magnifying-glass i{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search-bar #search-text input{
+    width: 100%;
+}
+
+.chat-user {
+    display: flex;
+    
+}
