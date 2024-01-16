@@ -53,6 +53,7 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="notifications">
                         <div id="bell">
                             <a href="#">
@@ -64,6 +65,7 @@
                             <a href="#">Attiva notifiche testo desktop</a>
                         </div>
                     </div>
+
                     <div class="search-bar ">
                         <div id="magnifying-glass">
                             <a href="#">
@@ -74,32 +76,69 @@
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
+
                     <div class="contact-list">
                         <ul>
                             <li
                             v-for = "(contact, i) in contacts"
                             >
-                            <img :src="contacts.avatar" :alt="">
+                            <img :src="contacts[i].avatar" :alt="contact.avatar">
 
                             {{ contact.name }}
+                            {{ contact.messages.message }}
                             </li>
                         </ul>
                     </div>
+
                 </div>
                 <div class="right">
                     <div class="chat-selected">
-                        <div class="chat-user">
+                        <div class="chat-user ">
                             <div class="user-image">
                                 <img src="./img/avatar_1.jpg" alt="avatar_1">
                             </div>
+
                             <div class="chat-selected-text">
-                                <div class="user-name">Michele</div>
-                                <div id="last-access"></div>
+                                <div class="user-name">
+                                    <p>Michele</p>
+                                </div>
+                                <div id="last-access">
+                                    <p>Ultimo accesso oggi alle 12:00</p>
+                                </div>
+                            </div>
+
+                            <div class="chat-menu">
+                                <div id="chat-menu-magnifying-glass">
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
+                                <div id="chat-menu-paperclip">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                </div>
+                                <div id="chat-menu-ellipsis">
+                                    <a href="#">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="chat-menu">
-                            
+                    </div>
+                    <div class="chat-room"></div>
+
+                    <div class="write-message">
+                        <div id="smile">
+                            <a href="#">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </a>
+                        </div>
+                        <div id="write-message-area">
+                            <input type="text">
+                        </div>
+                        <div id="vocal-message">
+                            <a href="#">
+                                <i class="fa-solid fa-microphone"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -43,26 +43,26 @@ img {
     display: flex;
 }
 
-.my-container * {
-    /* border: 1px dashed black; */
-}
-
 .left {
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .right {
     width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 #user {
+    height: 70px;
     display: flex;
     align-items: center;
     background-color: #EAEAEA;
-
 }
 
-.user-image img{
+.user-image img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -75,16 +75,18 @@ img {
     font-size: 1.3rem;
 }
 
-.left i{
-    font-size: 1.5rem;
+.left i,
+.right i {
+    font-size: 1.3rem;
     padding: 10px;
     color: #B1B1B1;
 }
 
 .notifications {
-    background-color: #8EDAFC;
+    height: 80px;
     display: flex;
     align-items: center;
+    background-color: #8EDAFC;
 
 }
 
@@ -116,6 +118,7 @@ img {
 }
 
 .search-bar {
+    height: 40px;
     display: flex;
     align-items: center;
     background-color: #FAFAFA;
@@ -132,11 +135,90 @@ img {
     border-radius: 5px;
 }
 
-.search-bar #search-text input{
+.search-bar #search-text input,
+.write-message #write-message-area input{
     width: 100%;
 }
 
-.chat-user {
+.contact-list {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.contact-list li{
+    list-style: none;
+    padding: 10px;
     display: flex;
-    
+}
+
+
+
+
+        /* RIGHT */
+.chat-user {
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+
+}
+
+.chat-selected-text {
+    flex-grow: 1;
+}
+
+.chat-selected-text div {
+    padding: 0px;
+}
+
+.chat-selected-text p {
+    margin: 0px;
+}
+
+.chat-menu {
+    display: flex;
+}
+
+.chat-room {
+    background-image: url("../img/mine.jpg");
+    flex-grow: 1;
+}
+
+.write-message {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+}
+
+.write-message #write-message-area {
+    flex-grow: 1;
+}
+
+
+/* CHATROOM */
+
+.recived {
+    background-color: white;
+}
+
+.sent {
+    background-color: #D5F9BA;
+}
+
+.contact-list img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+.my-container * {
+    border: 1px dashed black;
 }
